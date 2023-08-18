@@ -22,16 +22,19 @@ const Home = () => {
   return (
     <>
       <Box>
-      <Carousel
+      <Carousel 
+          autoPlay
+          infiniteLoop
           showStatus={false}
           showThumbs={false}
           showArrows={false}
+          interval={3000}
         >
           <Box
           w={"full"}
           h={"100vh"}
           >
-              <Image src={img1} h={"90%"} w={"full"} objectFit={"cover"}/>
+              <Image src={img1} h={"full"} w={"full"} objectFit={"cover"}/>
               <Heading bgColor={"blackAlpha.600"} color={"white"} {...headingOption}>
                   Watch The Future
               </Heading>
@@ -42,7 +45,7 @@ const Home = () => {
           w={"full"}
           h={"100vh"}
           >
-              <Image src={img2} h={"90%"} w={"full"} objectFit={"cover"}/>
+              <Image src={img2} h={"full"} w={"full"} objectFit={"cover"}/>
               <Heading bgColor={"blackAlpha.600"} color={"white"} {...headingOption}>
                   Gaming is Future
               </Heading>
@@ -53,7 +56,7 @@ const Home = () => {
           w={"full"}
           h={"100vh"}
           >
-              <Image src={img3} h={"90%"} w={"full"} objectFit={"cover"}/>
+              <Image src={img3} h={"full"} w={"full"} objectFit={"cover"}/>
               <Heading bgColor={"blackAlpha.600"} color={"white"} {...headingOption}>
                   Gaming On Console
               </Heading>
@@ -64,7 +67,7 @@ const Home = () => {
           w={"full"}
           h={"100vh"}
           >
-              <Image src={img4} h={"90%"} w={"full"} objectFit={"cover"}/>
+              <Image src={img4} h={"full"} w={"full"} objectFit={"cover"}/>
               <Heading bgColor={"blackAlpha.600"} color={"white"} {...headingOption}>
                   Night Life is Cool
               </Heading>
